@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Cigar landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg "  style="background-color: #1F4404; position: sticky; top: 0; z-index: 1000;">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="#" style="color: #ffff;">LOMBOY</a>
+            <!-- Toggler button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links (centered) -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown" style="padding-left: 15%;">
+                <ul class="navbar-nav" >
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"  href="#hero" style="color: #ffff;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color: #ffff;">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="color: #ffff;">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="color: #ffff;">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Dropdown (aligned to the right) -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                       <a href="#contact" type="button" class="btn " style="background-color: #068113; color: #ffff;">CONTACT</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section id="hero" class="hero" id="hero">
+        <div class="container">
+            <h1 class="title">Organic Cigarettes</h1>
+            <p class="subtitle">
+                All kinds of tobacco, when inhaled in a burnt form, are harmful to your health.
+               Cigarettes labeled "natural" or "organic tobacco" pose the same risks as regular
+                cigarettes because they contain the same toxins.
+            </p>
+        </div>
+    </section>
+  
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about-title">ABOUT</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.png" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <p>
+                        All kinds of tobacco, when inhaled in a burnt form, are harmful to your health.
+                        Cigarettes labeled "natural" or "organic tobacco" pose the same risks as regular
+                        cigarettes because they contain the same toxins.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="services-title">SERVICES</h2>
+            <div class="services-content">
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/about.png" alt="About Us">
+                    </div>
+                    <p>
+                        All kinds of tobacco, when inhaled in a burnt form, are harmful to your health.
+                        Cigarettes labeled "natural" or "organic tobacco" pose the same risks as regular
+                        cigarettes because they contain the same toxins.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/about.png" alt="About Us">
+                    </div>
+                    <p>
+                        All kinds of tobacco, when inhaled in a burnt form, are harmful to your health.
+                        Cigarettes labeled "natural" or "organic tobacco" pose the same risks as regular
+                        cigarettes because they contain the same toxins.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <div class="service-image">
+                        <img src="images/about.png" alt="About Us">
+                    </div>
+                    <p>
+                        All kinds of tobacco, when inhaled in a burnt form, are harmful to your health.
+                        Cigarettes labeled "natural" or "organic tobacco" pose the same risks as regular
+                        cigarettes because they contain the same toxins.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <label for="fullname">Fullname:</label>
+          <input type="text" id="fullname" name="from_name" placeholder="Enter fullname" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="from_email" placeholder="Enter Email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      
+        
+      <script type="text/javascript">
+        (function() {
+          emailjs.init("QYD6zMnUl3tpcCDJt"); // Replace with your actual User ID from EmailJS
+        })();
+      
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+      
+          emailjs.sendForm('service_fqh3pll', 'template_c9yuphk', this)
+            .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              // SweetAlert for success
+              Swal.fire({
+                title: 'Success!',
+                text: 'Message sent successfully!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+              }).then(() => {
+                // Redirect to index.html after the user clicks OK
+                window.location.href = 'index.html';
+              });
+            }, function(error) {
+              console.log('FAILED...', error);
+              // SweetAlert for failure
+              Swal.fire({
+                title: 'Error!',
+                text: 'Failed to send message, please try again later.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+              });
+            });
+        });
+      </script>
+      
+    
+
+    <section class="footer">
+        <div class="contacts">
+            <h3>CONTACTS</h3>
+            <p>Loc matina Davao city</p>
+            <p>Number 09692667111</p>
+            <p>Page Happy people</p>
+        </div>
+        <div class="owner">
+            <h3>OWNER</h3>
+            <p>Gerrylee Jumamoy</p>
+        </div>
+    </section>
+    
+    
+   
+
+    
+    
+    
+</body>
+</html>
